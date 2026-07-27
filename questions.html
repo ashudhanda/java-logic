@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questions — Java Logic</title>
+  <meta name="description" content="45 level-wise Java logic building questions with hints, logic steps and code." />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">☕</span>
+      <span class="brand-name">Java<span class="accent">Logic</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="questions.html" class="nav-link active">Questions</a>
+      <a href="index.html#dryrun" class="nav-link">Dry Run <span class="badge badge-soon">soon</span></a>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <h1 class="page-title">Question Bank</h1>
+    <p class="page-sub">Rule simple hai: pehle <strong>khud socho</strong> (paper pe dry run), phir hint kholo, phir logic, code sabse aakhir me. ✍️</p>
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-lv="0">All</button>
+      <button class="filter-btn" data-lv="1">Level 1 · Basics</button>
+      <button class="filter-btn" data-lv="2">Level 2 · Loops &amp; Patterns</button>
+      <button class="filter-btn" data-lv="3">Level 3 · Think Deeper</button>
+    </div>
+  </header>
+
+  <main class="section" id="qlist" aria-live="polite"></main>
+
+  <footer class="footer">
+    <p>Built by Ashu Dhanda · <span class="accent">JavaLogic</span> — logic strong, life easy.</p>
+  </footer>
+
+  <script src="js/questions.js"></script>
+</body>
+</html>
