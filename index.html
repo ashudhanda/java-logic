@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Logic — Build Logic Step by Step</title>
+  <meta name="description" content="Java logic building practice — level-wise questions with step-by-step dry runs." />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">☕</span>
+      <span class="brand-name">Java<span class="accent">Logic</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="#levels" class="nav-link">Questions <span class="badge badge-soon">soon</span></a>
+      <a href="#dryrun" class="nav-link">Dry Run <span class="badge badge-soon">soon</span></a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="hero-kicker">Logic ka gym, Java ke liye</p>
+    <h1 class="hero-title">Build your logic,<br /><span class="accent">one step at a time.</span></h1>
+    <p class="hero-sub">Level-wise logic questions with step-by-step dry runs — so you don't just memorize code, you actually <em>see</em> how it thinks.</p>
+    <div class="hero-actions">
+      <a href="#levels" class="btn btn-primary">Start Practice</a>
+      <a href="#dryrun" class="btn btn-ghost">See a Dry Run</a>
+    </div>
+  </header>
+
+  <section class="section" id="dryrun">
+    <h2 class="section-title">Dry run — har step aankhon ke saamne</h2>
+    <p class="section-sub">Yehi is website ka dil hai: code ki har line ke baad variables kaise badalte hain, table me dikhega.</p>
+    <div class="dryrun-demo">
+      <div class="code-card">
+        <div class="code-card-head">Fibonacci.java</div>
+<pre><code><span class="c-kw">int</span> a = <span class="c-num">0</span>, b = <span class="c-num">1</span>;
+<span class="c-kw">for</span> (<span class="c-kw">int</span> i = <span class="c-num">0</span>; i &lt; n; i++) {
+    System.out.print(a + <span class="c-str">" "</span>);
+    <span class="c-kw">int</span> next = a + b;
+    a = b;
+    b = next;
+}</code></pre>
+      </div>
+      <div class="trace-card">
+        <div class="code-card-head">Trace table (n = 4)</div>
+        <table class="trace-table">
+          <thead>
+            <tr><th>step</th><th>i</th><th>a</th><th>b</th><th>output</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>2</td><td>1</td><td>1</td><td>1</td><td>0 1</td></tr>
+            <tr class="trace-active"><td>3</td><td>2</td><td>1</td><td>2</td><td>0 1 1</td></tr>
+            <tr class="trace-dim"><td>4</td><td>3</td><td>2</td><td>3</td><td>0 1 1 2</td></tr>
+          </tbody>
+        </table>
+        <p class="trace-note">Interactive version aa raha hai — "Next Step" dabao, ek line chale, variables update.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="levels">
+    <h2 class="section-title">Level-wise practice</h2>
+    <p class="section-sub">Basic se shuru karo, aaram se upar jao. Har question ke saath hint + dry run.</p>
+    <div class="level-grid">
+      <article class="level-card">
+        <div class="level-tag level-tag-1">Level 1</div>
+        <h3>Basics</h3>
+        <ul>
+          <li>Sum of digits</li>
+          <li>Reverse a number</li>
+          <li>Swap two numbers</li>
+          <li>Even / odd counter</li>
+        </ul>
+      </article>
+      <article class="level-card">
+        <div class="level-tag level-tag-2">Level 2</div>
+        <h3>Loops &amp; Patterns</h3>
+        <ul>
+          <li>Fibonacci series</li>
+          <li>Palindrome check</li>
+          <li>Star patterns</li>
+          <li>Factorial &amp; tables</li>
+        </ul>
+      </article>
+      <article class="level-card">
+        <div class="level-tag level-tag-3">Level 3</div>
+        <h3>Think Deeper</h3>
+        <ul>
+          <li>Prime numbers</li>
+          <li>Armstrong numbers</li>
+          <li>Array max / min</li>
+          <li>Simple searching</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built by Ashu Dhanda · <span class="accent">JavaLogic</span> — logic strong, life easy.</p>
+  </footer>
+
+</body>
+</html>

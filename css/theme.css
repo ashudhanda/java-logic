@@ -1,0 +1,208 @@
+/* ============================================
+   JavaLogic — Calm Focus Theme
+   Colors chosen from color-psychology research:
+   deep navy = calm, blue = focus, green = balance,
+   amber = alertness (used sparingly)
+   ============================================ */
+
+:root {
+  /* Core palette */
+  --bg: #0F1B2D;          /* deep calm navy */
+  --surface: #16263D;     /* card / section surface */
+  --surface-raised: #1D3049;
+  --border: rgba(232, 238, 244, 0.12);
+
+  /* Text */
+  --text: #E8EEF4;        /* soft white */
+  --text-dim: rgba(232, 238, 244, 0.66);
+
+  /* Accents */
+  --primary: #4FC3F7;     /* sky blue — focus */
+  --primary-soft: rgba(79, 195, 247, 0.12);
+  --green: #66BB6A;       /* sage green — progress */
+  --green-soft: rgba(102, 187, 106, 0.12);
+  --amber: #FFB74D;       /* warm amber — energy, CTAs */
+  --amber-soft: rgba(255, 183, 77, 0.12);
+
+  /* Type & spacing */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "Menlo", "Consolas", "Liberation Mono", monospace;
+  --radius: 8px;
+  --radius-lg: 12px;
+}
+
+/* ---------- Reset & base ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+em {
+  font-style: italic;
+  color: var(--primary);
+}
+
+.accent {
+  color: var(--primary);
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 16px;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: var(--amber);
+  color: #14202f;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: #ffc266;
+}
+
+.btn-ghost {
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: transparent;
+}
+
+.btn-ghost:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* ---------- Badges & tags ---------- */
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
+.badge-soon {
+  background: var(--amber-soft);
+  color: var(--amber);
+}
+
+.level-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.level-tag-1 {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.level-tag-2 {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.level-tag-3 {
+  background: var(--amber-soft);
+  color: var(--amber);
+}
+
+/* ---------- Code & trace styling ---------- */
+
+pre, code {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.c-kw  { color: var(--primary); }
+.c-num { color: var(--amber); }
+.c-str { color: var(--green); }
+
+.trace-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.trace-table th,
+.trace-table td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.trace-table th {
+  color: var(--text-dim);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.trace-active {
+  background: var(--green-soft);
+}
+
+.trace-active td {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.trace-dim td {
+  color: var(--text-dim);
+}
