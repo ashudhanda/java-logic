@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dry Run — Java Logic</title>
+  <meta name="description" content="Interactive dry run visualizer — Java code line by line chalao aur variables ko live badalte dekho." />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/dryrun.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">☕</span>
+      <span class="brand-name">Java<span class="accent">Logic</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="questions.html" class="nav-link">Questions</a>
+      <a href="dryrun.html" class="nav-link active">Dry Run</a>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <h1 class="page-title">Dry Run Visualizer</h1>
+    <p class="page-sub">Program chuno, phir <strong>Next Step</strong> dabao — code line-by-line chalega aur variables ko live badalte dekhoge. Yehi cheez paper pe khud karni hai test me. ✍️</p>
+    <div class="filter-bar" id="progBar"></div>
+  </header>
+
+  <main class="section dr-wrap">
+    <div class="code-card">
+      <div class="code-card-head" id="progName">Program</div>
+      <ol class="dr-code" id="codeLines"></ol>
+    </div>
+
+    <div class="dr-panel">
+      <div class="dr-controls">
+        <button class="btn btn-ghost dr-btn" id="btnPrev">← Prev</button>
+        <button class="btn btn-primary dr-btn" id="btnNext">Next Step →</button>
+        <button class="btn btn-ghost dr-btn" id="btnReset">↺ Reset</button>
+      </div>
+      <p class="dr-step-count" id="stepCount">Step 0 / 0</p>
+
+      <div class="dr-card">
+        <div class="code-card-head">Variables</div>
+        <table class="trace-table" id="varTable">
+          <thead><tr id="varHead"></tr></thead>
+          <tbody><tr id="varRow"></tr></tbody>
+        </table>
+      </div>
+
+      <div class="dr-card">
+        <div class="code-card-head">Output</div>
+        <pre class="dr-output"><code id="outBox"></code></pre>
+      </div>
+
+      <p class="dr-note" id="noteBox">Program select karo aur Next Step dabao.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Built by Ashu Dhanda · <span class="accent">JavaLogic</span> — logic strong, life easy.</p>
+  </footer>
+
+  <script src="js/dryrun.js"></script>
+</body>
+</html>
