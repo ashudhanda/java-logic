@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCQ Test — JavaLogic</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/mcq.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">☕</span>
+      <span class="brand-name">Java<span class="accent">Logic</span></span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="questions.html">Questions</a>
+      <a class="nav-link" href="dryrun.html">Dry Run</a>
+      <a class="nav-link active" href="mcq.html">MCQ Test</a>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <h1 class="page-title">MCQ Test — Exam Practice</h1>
+    <p class="page-sub">150+ exam-ready Java MCQs (ST-1 syllabus). Option select karte hi turant pata chalega sahi hai ya galat, saath me short explanation bhi. Live score upar chalta rahega.</p>
+    <div class="filter-bar" id="mcqFilter"></div>
+  </header>
+
+  <section class="section" style="padding-top:16px;">
+    <div class="mcq-scoreboard">
+      <div class="score-item"><strong id="statAtt">0</strong>Attempted</div>
+      <div class="score-item ok"><strong id="statCor">0</strong>Correct</div>
+      <div class="score-item tot"><strong id="statTot">0</strong>Total</div>
+    </div>
+    <div class="mcq-toolbar">
+      <button class="btn btn-ghost" id="btnReset" type="button">Reset / Dobara</button>
+    </div>
+    <main id="mcqList"></main>
+  </section>
+
+  <footer class="footer">
+    Built by Ashu Dhanda · JavaLogic — logic strong, life easy.
+  </footer>
+
+  <script src="js/mcq-data.js"></script>
+  <script src="js/mcq.js"></script>
+</body>
+</html>
