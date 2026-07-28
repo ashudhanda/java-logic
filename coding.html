@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Questions — JavaLogic</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/coding.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">☕</span>
+      <span class="brand-name">Java<span class="accent">Logic</span></span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="questions.html">Questions</a>
+      <a class="nav-link" href="dryrun.html">Dry Run</a>
+      <a class="nav-link" href="mcq.html">MCQ Test</a>
+      <a class="nav-link active" href="coding.html">Coding Qs</a>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <h1 class="page-title">Coding Questions — Programs + Logic</h1>
+    <p class="page-sub">ST-1 syllabus ke har topic se banne wale coding questions — har ek ka <strong>naam + logic (approach)</strong>. Module-wise filter karo ya naam se search karo. Pehle khud logic socho, phir yahan check karo. ✍️</p>
+    <div class="filter-bar" id="codeFilter"></div>
+  </header>
+
+  <section class="section" style="padding-top:16px;">
+    <div class="code-toolbar">
+      <input type="text" id="codeSearch" class="code-search" placeholder="Search by name (jaise: palindrome, sort, factorial)..." />
+    </div>
+    <p class="code-count" id="codeCount"></p>
+    <main id="codeList"></main>
+  </section>
+
+  <footer class="footer">
+    Built by Ashu Dhanda · JavaLogic — logic strong, life easy.
+  </footer>
+
+  <script src="js/coding-data.js"></script>
+  <script src="js/coding.js"></script>
+</body>
+</html>
