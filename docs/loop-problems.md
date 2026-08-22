@@ -34,4 +34,4 @@ reverse    = reverse * 10 + lastDigit;
 - ⭐⭐ 5-9 — digit extraction pattern
 - ⭐⭐⭐ 10-14 — interview/exam level
 
-> Har problem solve karne ke baad khud se poochho: agar input negative ho to?
+> Har problem solve karne ke baad khud se poochho: agar input negative ho to? Kya aapke solution me input validation hai?
