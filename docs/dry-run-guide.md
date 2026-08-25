@@ -1,4 +1,4 @@
-# Dry Run Guide 📝
+# Dry Run Guide: Step-by-Step Code Execution 📝
 
 Dry run = code ko paper pe line-by-line execute karna, computer banke.
 
